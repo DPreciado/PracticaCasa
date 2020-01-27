@@ -116,16 +116,18 @@ void dibujarPared() {
 	glEnd();
 }
 
+float dy = 0.00;
+
 void dibujarVentana() {
 	//ventana
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.0f, 0.9f, 0.9f);
 
-	glVertex3f(0.3f, 0.1f, 0.0f);
-	glVertex3f(0.3f, -0.2f, 0.0f);
-	glVertex3f(0.6f, -0.2f, 0.0f);
-	glVertex3f(0.6f, 0.1f, 0.0f);
-	glVertex3f(0.3f, 0.1f, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
+	glVertex3f(0.3f, -0.2f + dy, 0.0f);
+	glVertex3f(0.6f, -0.2f + dy, 0.0f);
+	glVertex3f(0.6f, 0.1f +dy, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
 
 	glEnd();
 
@@ -134,33 +136,33 @@ void dibujarVentana() {
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.5f, 0.3f, 0.1f);
 
-	glVertex3f(0.3f, 0.1f, 0.0f);
-	glVertex3f(0.315f, 0.1f, 0.0f);
-	glVertex3f(0.315f, -0.2f, 0.0f);
-	glVertex3f(0.3f, -0.2f, 0.0f);
-	glVertex3f(0.3f, 0.1f, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
+	glVertex3f(0.315f, 0.1f + dy, 0.0f);
+	glVertex3f(0.315f, -0.2f + dy, 0.0f);
+	glVertex3f(0.3f, -0.2f + dy, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
 
 	glEnd();
 	//medio
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.5f, 0.3f, 0.1f);
 
-	glVertex3f(0.445f, 0.1f, 0.0f);
-	glVertex3f(0.455f, 0.1f, 0.0f);
-	glVertex3f(0.455f, -0.2f, 0.0f);
-	glVertex3f(0.445f, -0.2f, 0.0f);
-	glVertex3f(0.445f, 0.1f, 0.0f);
+	glVertex3f(0.445f, 0.1f + dy, 0.0f);
+	glVertex3f(0.455f, 0.1f + dy, 0.0f);
+	glVertex3f(0.455f, -0.2f + dy, 0.0f);
+	glVertex3f(0.445f, -0.2f + dy, 0.0f);
+	glVertex3f(0.445f, 0.1f + dy, 0.0f);
 
 	glEnd();
 	//derecho
 	glBegin(GL_TRIANGLE_STRIP);
-	glColor3f(0.5f, 0.3f, 0.1f);
+	glColor3f(0.5f, 0.3f + dy, 0.1f);
 
-	glVertex3f(0.6f, 0.1f, 0.0f);
-	glVertex3f(0.585f, 0.1f, 0.0f);
-	glVertex3f(0.585f, -0.2f, 0.0f);
-	glVertex3f(0.6f, -0.2f, 0.0f);
-	glVertex3f(0.6f, 0.1f, 0.0f);
+	glVertex3f(0.6f, 0.1f + dy, 0.0f);
+	glVertex3f(0.585f, 0.1f + dy, 0.0f);
+	glVertex3f(0.585f, -0.2f + dy, 0.0f);
+	glVertex3f(0.6f, -0.2f + dy, 0.0f);
+	glVertex3f(0.6f, 0.1f + dy, 0.0f);
 
 	glEnd();
 
@@ -169,33 +171,57 @@ void dibujarVentana() {
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.5f, 0.3f, 0.1f);
 
-	glVertex3f(0.3f, 0.1f, 0.0f);
-	glVertex3f(0.6f, 0.1f, 0.0f);
-	glVertex3f(0.6f, 0.115f, 0.0f);
-	glVertex3f(0.3f, 0.115f, 0.0f);
-	glVertex3f(0.3f, 0.1f, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
+	glVertex3f(0.6f, 0.1f + dy, 0.0f);
+	glVertex3f(0.6f, 0.115f + dy, 0.0f);
+	glVertex3f(0.3f, 0.115f + dy, 0.0f);
+	glVertex3f(0.3f, 0.1f + dy, 0.0f);
 
 	glEnd();
 	//medio
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.5f, 0.3f, 0.1f);
 
-	glVertex3f(0.3f, -0.036f, 0.0f);
-	glVertex3f(0.6f, -0.036f, 0.0f);
-	glVertex3f(0.6f, -0.05f, 0.0f);
-	glVertex3f(0.3f, -0.05f, 0.0f);
-	glVertex3f(0.3f, -0.036f, 0.0f);
+	glVertex3f(0.3f, -0.036f + dy, 0.0f);
+	glVertex3f(0.6f, -0.036f + dy, 0.0f);
+	glVertex3f(0.6f, -0.05f + dy, 0.0f);
+	glVertex3f(0.3f, -0.05f + dy, 0.0f);
+	glVertex3f(0.3f, -0.036f + dy, 0.0f);
 
 	glEnd();
 	//abajo
 	glBegin(GL_TRIANGLE_STRIP);
 	glColor3f(0.5f, 0.3f, 0.1f);
 
-	glVertex3f(0.3f, -0.185f, 0.0f);
-	glVertex3f(0.6f, -0.185f, 0.0f);
-	glVertex3f(0.6f, -0.2f, 0.0f);
-	glVertex3f(0.3f, -0.2f, 0.0f);
-	glVertex3f(0.3f, -0.185f, 0.0f);
+	glVertex3f(0.3f, -0.185f + dy, 0.0f);
+	glVertex3f(0.6f, -0.185f + dy, 0.0f);
+	glVertex3f(0.6f, -0.2f + dy, 0.0f);
+	glVertex3f(0.3f, -0.2f + dy, 0.0f);
+	glVertex3f(0.3f, -0.185f + dy, 0.0f);
+
+	glEnd();
+}
+
+void dibujarTecho() {
+	glBegin(GL_TRIANGLES);
+	glColor3f(0.2f, 0.1f, 0.07f);
+
+	glVertex3f(-0.4f, 0.35f, 0.0f);
+	glVertex3f(0.8f, 0.35f, 0.0f);
+	glVertex3f(0.2f, 0.65f, 0.0f);
+
+	glEnd();
+}
+
+void dibujarPuerta() {
+	glBegin(GL_TRIANGLE_STRIP);
+	glColor3f(0.6f, 0.6f, 0.6f);
+
+	glVertex3f(0.1f, -0.3f, 0.0f);
+	glVertex3f(0.1f, -0.6f, 0.0f);
+	glVertex3f(0.35f, -0.6f, 0.0f);
+	glVertex3f(0.35f, -0.3f, 0.0f);
+	glVertex3f(0.1f, -0.3f, 0.0f);
 
 	glEnd();
 }
@@ -203,6 +229,8 @@ void dibujarVentana() {
 void dibujarCasa() {
 	dibujarPared();
 	dibujarVentana();
+	dibujarTecho();
+	dibujarPuerta();
 }
 
 
